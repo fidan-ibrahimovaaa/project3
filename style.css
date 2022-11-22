@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,500;1,400&display=swap');
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto';
+}
+
+nav {
+    display: flex;
+    background: #F5F5F6;
+    justify-content: space-between;
+    height: 9.3vh;
+}
+
+.logo img {
+    margin-left: 8vw;
+    margin-top: 3vh;
+}
+
+.menu ul {
+    display: flex;
+    justify-content: space-around;
+    margin-right: 5vw;
+    list-style-type: none;
+    margin-top: 3vh;
+}
+
+.menu ul li a:hover {
+    color: black;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    margin-right: 1.5vw;
+    font-weight: 500;
+    letter-spacing: 0.06em;
+    color: #959BA4;
+}
+
+.menu ul li:first-child a {
+    color: black;
+}
+
+nav .btn-back {
+    letter-spacing: 0.06em;
+    border-style: none;
+    background-color: white;
+    border-radius: 5px;
+    margin-right: 7vw;
+    margin-top: 1.5vh;
+    width: 5vw;
+    height: 5.5vh;
+}
+
+
+.section {
+    margin-left: 22vw;
+    margin-top: 9vh;
+}
+
+.box {
+    display: flex;
+    color: #959BA4;
+}
+
+.box button {
+    background-color: white;
+    border: 1px solid #959BA4;
+    color: #959BA4;
+    margin-right: -6px;
+    padding: 10px 30px;
+    border-radius: 3px;
+}
+
+.box p{
+color: #9F9F9F;
+}
+
+input{
+    margin-top: 2vw;
+    border: 1px solid #E5E5E5;
+    border-radius: 3px;
+    width: 21.6vw;
+    padding: 15px 0px 100px 20px;
+    font-size: 35px;
+}
+
+.activeButton{
+    background-color: #833AE0 !important;
+    color: white !important;
+}
