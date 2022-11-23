@@ -19,22 +19,24 @@ function changeCurrency(event, whichSide, currency) {
     fetch(`${url}base=${leftSideBaseCurrency}&symbols=${currency}`)
       .then((res) => res.json())
       .then((data) => {
-        if(currency=='USD'){
-        curInput2.value = data.rates.USD * curInput1.value;
-        console.log(data,data.rates.USD)
-        }
-        else if(currency=='RUB'){
-            curInput2.value = data.rates.RUB * curInput1.value;
-            console.log(data,data.rates.RUB)
-        }
-        else if(currency=='EUR'){
-            curInput2.value = data.rates.EUR * curInput1.value;
-            console.log(data,data.rates.EUR)
-        }
-        else if(currency=='GBP'){
-            curInput2.value = data.rates.GBP * curInput1.value;
-            console.log(data,data.rates.GBP)
-        }
+//  A🦁:        
+      curInput2.value = data.rates[currency] * curInput1.value
+//         if(currency=='USD'){
+//         curInput2.value = data.rates.USD * curInput1.value;
+//         console.log(data,data.rates.USD)
+//         }
+//         else if(currency=='RUB'){
+//             curInput2.value = data.rates.RUB * curInput1.value;
+//             console.log(data,data.rates.RUB)
+//         }
+//         else if(currency=='EUR'){
+//             curInput2.value = data.rates.EUR * curInput1.value;
+//             console.log(data,data.rates.EUR)
+//         }
+//         else if(currency=='GBP'){
+//             curInput2.value = data.rates.GBP * curInput1.value;
+//             console.log(data,data.rates.GBP)
+//         }
       });
     [...rightButtons].forEach((button) => {
       button.classList.remove("activeButton");
